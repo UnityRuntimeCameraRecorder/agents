@@ -1,4 +1,3 @@
-# agents
+# Agent instructions
 
-Shared Codex instructions for Landoria mods are in AGENTS.global.md.
-Repositories must explicitly read this file; Codex does not load it from GitHub automatically.
+Shared Agent instructions for Landoria mods are in AGENTS.global.md.
