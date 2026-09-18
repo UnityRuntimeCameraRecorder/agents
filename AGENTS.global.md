@@ -79,4 +79,5 @@ To locate a remote linux server, check whether these environment variables are s
 ## Don't kill my valheim server like a cad
 
 If the valheim server is running, never stop it yourself. Ask me to stop it instead.
+Let me also start the server.
 It's ok if you kill the valheim UI (unity player)
