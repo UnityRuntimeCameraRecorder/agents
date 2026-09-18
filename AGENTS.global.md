@@ -1,4 +1,4 @@
-# Global instructions
+# Global instructions for AI agents
 
 ## Rule "Simple and concise documentation"
 
