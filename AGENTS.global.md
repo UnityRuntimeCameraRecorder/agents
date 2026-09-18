@@ -71,11 +71,6 @@ To locate Linux folders, check whether these environment variables are set:
 | `$REMOTE_VALHEIM_SSH_USER` | Remote Linux ssh user | debian |
 | `$REMOTE_VALHEIM_SSH_HOST` | Remote Linux ssh host | valheim |
 
-To locate a remote linux server, check whether these environment variables are set:
-
-- Remove Linux Valheim data folder: `$REMOTE_VALHEIM_DATA_PATH`
-- Remove Linux Valheim BepInEx profile: `$REMOTE_VALHEIM_BEPINEX_PROFILE_PAH`
-
 ## Don't kill my valheim server like a cad
 
 If the valheim server is running, never stop it yourself. Ask me to stop it instead.
