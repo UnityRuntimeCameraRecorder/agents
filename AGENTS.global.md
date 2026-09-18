@@ -50,12 +50,33 @@ Do not add unit tests by default. You may write targeted tests when they help ve
 
 To locate local folders, check whether these environment variables are set:
 
-- Local Steam Valheim game folder: `$STEAM_VALHEIM_GAME_PATH`
-- Local Steam Valheim dedicated server folder: `$STEAM_VALHEIM_GAME_PATH`
-- Local Valheim data folder: `$VALHEIM_DATA_PATH`
-- Local Valheim BepInEx profile: `$VALHEIM_BEPINEX_PROFILE_PAH`
-- Local Xbox Valheim game folder: `$XBOX_VALHEIM_GAME_PATH`
-- Local Xbox Valheim dedicated server folder: `$XBOX_VALHEIM_GAME_PATH`
-- Local Valheim disassembled source code: `$VALHEIM_DISASSEMBLED_SOURCE_CODE`
+| Environment variable | Description | Default value |
+| --- | --- | --- |
+| `$STEAM_VALHEIM_GAME_PATH` | Local Steam Valheim game folder | `%ProgramFiles(x86)%\Steam\steamapps\common\Valheim` |
+| `$STEAM_VALHEIM_SERVER_PATH` | Local Steam Valheim dedicated server folder | `%ProgramFiles(x86)%\Steam\steamapps\common\Valheim dedicated server` |
+| `$VALHEIM_DATA_PATH` | Local Valheim data folder | `%USERPROFILE%\AppData\LocalLow\IronGate\Valheim` |
+| `$VALHEIM_BEPINEX_PROFILE_PATH` | Local Valheim BepInEx profile | `%APPDATA%\r2modmanPlus-local\Valheim\profiles\Default` |
+| `$XBOX_VALHEIM_GAME_PATH` | Local Xbox Valheim game folder | `%SystemDrive%\XboxGames\Valheim\Content` |
+| `$XBOX_VALHEIM_SERVER_PATH` | Local Xbox Valheim dedicated server folder | `%SystemDrive%\XboxGames\Valheim\Content\Server` |
+| `$VALHEIM_DISASSEMBLED_SOURCE_CODE` | Local Valheim disassembled source code |  |
 
-If Valheim or its dedicated server is running, never stop it yourself. Ask me to stop it instead.
+## Remote Linux environment
+
+To locate Linux folders, check whether these environment variables are set:
+
+| Environment variable | Description | Default value |
+| --- | --- | --- |
+| `$REMOTE_VALHEIM_SAVE_DIR` | Remote Linux Valheim data folder | /mnt/data/valheim/savedir |
+| `$REMOTE_VALHEIM_BEPINEX_PROFILE_PATH` | Remote Linux Valheim BepInEx profile | /mnt/data/valheim/BepInEx |
+| `$REMOTE_VALHEIM_SSH_USER` | Remote Linux ssh user | debian |
+| `$REMOTE_VALHEIM_SSH_HOST` | Remote Linux ssh host | valheim |
+
+To locate a remote linux server, check whether these environment variables are set:
+
+- Remove Linux Valheim data folder: `$REMOTE_VALHEIM_DATA_PATH`
+- Remove Linux Valheim BepInEx profile: `$REMOTE_VALHEIM_BEPINEX_PROFILE_PAH`
+
+## Don't kill my valheim server like a cad
+
+If the valheim server is running, never stop it yourself. Ask me to stop it instead.
+It's ok if you kill the valheim UI (unity player)
