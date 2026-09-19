@@ -20,6 +20,8 @@ Each class or script should also have a single-line comment that briefly explain
 Avoid code duplication.
 Unless explicitly instructed otherwise, define only one class per C# file.
 Always use braces for control-flow blocks, even when they contain only one statement. For example:
+A catch block must never silently swallow an exception; at a minimum, it must log it.
+Multiple statements on the same line are not allowed, except for auto-properties ({ get; set; }) and for loop headers.
 
 ```csharp
 // Incorrect
